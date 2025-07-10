@@ -4,9 +4,13 @@ import { sql } from "./config/db.js"; // Adjust the path as necessary
 import rateLimiter from "./middleware/rateLimiter.js";
 import transactionsRoute from "./routes/transactionsRoute.js"; // Adjust the path as necessary
 
+import job  from "./config/cron.js";
+
 dotenv.config();
 
 const app = express();
+
+if (process.env.NODE_ENV==="production") job.start()  ;
 
 // import cors from "cors";
 
@@ -21,6 +25,11 @@ app.use(express.json());
 // }); 
 
 const PORT = process.env.PORT || 5001;
+
+app.get("/api/health", (req,res) => {
+res.status(200).json({status: "ok"});
+});
+
 
 async function initDB() {
     try {   
