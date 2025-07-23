@@ -92,7 +92,7 @@ npx expo start
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1177b6d7-5587-4e39-9110-0a400817d4bf" width="220" height="470" />
-  <img src="https://github.com/user-attachments/assets/50e38d58-8120-4806-9620-18b5c98cacbb" width="220" height="470" />
+  <img src="https://github.com/user-attachments/assets/c13fa7ec-a312-4284-9dc3-d74bd1fae509" width="220" height="470" />
   <img src="https://github.com/user-attachments/assets/d8238765-36fc-4c69-a035-a451678a7037" width="220" height="470" />
 </p>
 
